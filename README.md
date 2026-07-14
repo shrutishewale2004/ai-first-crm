@@ -10,7 +10,7 @@ An AI-first Customer Relationship Management application designed for life scien
 - Interaction history dashboard
 - Redux Toolkit state management
 - FastAPI REST API
-- MySQL database integration
+- SQLite database integration
 - LangGraph AI agent
 - Groq LLM integration
 - Five CRM tools for AI-driven interaction management
