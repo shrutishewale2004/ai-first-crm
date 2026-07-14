@@ -1,0 +1,11 @@
+backend/venv/
+backend/.env
+backend/crm.db
+
+frontend/node_modules/
+frontend/dist/
+
+**/__pycache__/
+*.pyc
+
+.vscode/

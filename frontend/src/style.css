@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #f4f7fb;
+  color: #172033;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.app-shell {
+  width: min(1400px, calc(100% - 40px));
+  margin: auto;
+  padding: 38px 0;
+}
+
+.page-header {
+  margin-bottom: 26px;
+}
+
+.eyebrow,
+.section-label {
+  margin: 0;
+  color: #5969e8;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.page-header h1 {
+  margin: 6px 0;
+  font-size: 30px;
+}
+
+.subtitle {
+  margin: 0;
+  color: #667085;
+}
+
+.crm-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(320px, 1fr);
+  gap: 22px;
+  align-items: stretch;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e5e9f2;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(25, 39, 80, 0.06);
+}
+
+.form-card,
+.chat-card {
+  padding: 24px;
+}
+
+.card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #edf0f5;
+  margin-bottom: 20px;
+}
+
+.card-heading h2 {
+  margin: 5px 0 0;
+  font-size: 19px;
+}
+
+form > label,
+.form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 17px;
+  color: #344054;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #d9deea;
+  border-radius: 8px;
+  padding: 11px 12px;
+  outline: none;
+  background: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #6675e8;
+  box-shadow: 0 0 0 3px rgba(102, 117, 232, 0.12);
+}
+
+textarea {
+  min-height: 85px;
+  resize: vertical;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0 0 18px;
+}
+
+legend {
+  margin-bottom: 10px;
+  color: #344054;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sentiment-options {
+  display: flex;
+  gap: 20px;
+}
+
+.sentiment-options label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+}
+
+.sentiment-options input {
+  width: auto;
+}
+
+.primary-button,
+.chat-input button {
+  border: 0;
+  border-radius: 8px;
+  background: #5969e8;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary-button {
+  width: 100%;
+  padding: 12px 18px;
+}
+
+.status-message {
+  font-size: 13px;
+  color: #344054;
+}
+
+.chat-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 700px;
+}
+
+.online-badge {
+  padding: 5px 9px;
+  border-radius: 20px;
+  background: #ecfdf3;
+  color: #027a48;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 20px;
+}
+
+.message {
+  max-width: 88%;
+  padding: 11px 13px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.message.assistant {
+  align-self: flex-start;
+  background: #f0f3ff;
+}
+
+.message.user {
+  align-self: flex-end;
+  background: #5969e8;
+  color: white;
+}
+
+.chat-input {
+  padding-top: 16px;
+  border-top: 1px solid #edf0f5;
+}
+
+.chat-input textarea {
+  min-height: 80px;
+}
+
+.chat-input button {
+  width: 100%;
+  margin-top: 9px;
+  padding: 11px;
+}
+
+.chat-input button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 850px) {
+  .crm-layout,
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .app-shell {
+    width: min(100% - 24px, 1400px);
+  }
+}

@@ -1,0 +1,25 @@
+import InteractionForm from "./components/InteractionForm";
+import ChatAssistant from "./components/ChatAssistant";
+
+function App() {
+  return (
+    <main className="app-shell">
+      <header className="page-header">
+        <div>
+          <p className="eyebrow">AI-First CRM</p>
+          <h1>Log HCP Interaction</h1>
+          <p className="subtitle">
+            Capture field interactions through a structured form or AI assistant.
+          </p>
+        </div>
+      </header>
+
+      <section className="crm-layout">
+        <InteractionForm />
+        <ChatAssistant />
+      </section>
+    </main>
+  );
+}
+
+export default App;
